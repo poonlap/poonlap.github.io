@@ -5,7 +5,7 @@ cache:
 notifications:
   email:
     recipients:
-      - chen@huchen.me
+      - poonlap@tanabur.co.th
     on_success: always
     on_failure: always
 node_js:
