@@ -5,7 +5,7 @@ require(`dotenv`).config({
 module.exports = {
   siteMetadata: {
     // Used for the title template on pages other than the index site
-    siteTitle: `PLV`,
+    siteTitle: `🐓 PLV`,
     // Default title of the page
     siteTitleAlt: `Just a blog - Poonlap V.`,
     // Can be used for e.g. JSONLD
