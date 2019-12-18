@@ -23,6 +23,10 @@ module.exports = {
     // Links displayed in the header on the right side
     externalLinks: [
       {
+        name: `Github`,
+        url: `https://github.com/poonlap` 
+      },
+      {
         name: `Twitter`,
         url: `https://twitter.com/poonlapv`
       },

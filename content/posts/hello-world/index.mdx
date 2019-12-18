@@ -86,7 +86,7 @@ $ git branch -m develop
 #### เซ็ต Travis
 โดยปกติถ้าจะเอาบล็อกขึ้นไปที่เซิร์ฟเวอร์ ก็จะใช `yarn deploy` สร้างโฟลเดอร์ public แล้วเอาขึ้น github. ซึ่งตรงนี้ใช้ Travis ด้วยได้. เริ่มต้นด้วยการสร้างไฟล์ `.travis.yml`
 
-```:title=travis.yml
+```yml
 language: node_js
 cache:
   directories:
@@ -113,7 +113,9 @@ deploy:
   on:
     branch: develop
 ```
- 
+
+<br/><bt/>
+
  #### สร้าง token เพื่อให้ Travis ต่อ Github 
  ไปสร้าง [personal access token](https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line) ใน Github. ที่เมนู Settings > Developers Settings > Personal access tokens.
 
@@ -134,8 +136,12 @@ $ git push origin develop
 
 ถ้าเราเพิ่มโพสใน Gatsby เรียบร้อยแล้ว commit, push ใน branch develop เมื่อไร, Travis จะ build ไปที่ master ให้อัตโนมัติ.
 
- 
+![Travis build](./travis-build.png) 
 
+
+รอให้ Travis build ผ่านแล้วเข้าไปดูที่ [github.io](https://poonlap.github.io) ได้.
+
+![Travis passed](./travis-pass.png)
 
 ### Reference
 - [Gatsby-themem-minimal-blog](https://www.gatsbyjs.org/packages/@lekoarts/gatsby-theme-minimal-blog/)<br/>
