@@ -4,17 +4,49 @@ require(`dotenv`).config({
 
 module.exports = {
   siteMetadata: {
-    siteTitleAlt: `Minimal Blog - Gatsby Theme`,
+    // Used for the title template on pages other than the index site
+    siteTitle: `PLV`,
+    // Default title of the page
+    siteTitleAlt: `Just a blog - Poonlap V.`,
+    // Can be used for e.g. JSONLD
+    siteHeadline: `Just a blog - by Poonlap V.`,
+    // Will be used to generate absolute URLs for og:image etc.
+    siteUrl: `https://poonlap.github.io`,
+    // Used for SEO
+    siteDescription: `A blog, stories written by Poonlap V.`,
+    // Will be set on the <html /> tag
+    siteLanguage: `th`,
+    // Used for og:image and must be placed inside the `static` folder
+    siteImage: `/banner.jpg`,
+    // Twitter Handle
+    author: `@poonlapv`,
+    // Links displayed in the header on the right side
+    externalLinks: [
+      {
+        name: `Twitter`,
+        url: `https://twitter.com/poonlapv`
+      },
+      {
+        name: `Instagram`,
+        url: `https://www.instagram.com/poonlapv/`
+      },
+      {
+        name: `Facebook`,
+        url: `https://facebook.com/poonlapv/`
+      }
+
+    ],
+    tagsPath: `/tags`,
+    blogPath: `/blog`,
+    basePath: `/`,
+    showLineNumbers: true,
+    // Navigation links
     navigation: [
       {
         title: `Blog`,
-        slug: `/blog`,
-      },
-      {
-        title: `About`,
-        slug: `/about`,
-      },
-    ],
+        slug: `/blog`
+      }
+    ]
   },
   plugins: [
     {
